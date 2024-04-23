@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public enum BattleState { START, PLAYERTURN, ENEMYRTURN, WON, LOST }
 public class BattleSystem : MonoBehaviour
@@ -29,6 +30,10 @@ public class BattleSystem : MonoBehaviour
     public Slider PlayerTPSlider;
     public Slider EnemyHPSlider;
 
+    public TextMeshProUGUI SkillName1;
+    public TextMeshProUGUI SkillName2;
+    public TextMeshProUGUI SkillName3;
+
     public BattleState state;
 
     public GameObject BattleMenu;
@@ -37,6 +42,11 @@ public class BattleSystem : MonoBehaviour
     int RandomDamage;
     int PlayerDamage;
     int EnemyDamage;
+
+    public GameObject StandardMenu;
+    public GameObject SkillMenu;
+    public GameObject ComboMenu;
+    public GameObject ItemMenu;
 
     void Start()
     {
@@ -68,6 +78,10 @@ public class BattleSystem : MonoBehaviour
         PlayerTPSlider.value = playerUnit.currentTP;
         EnemyHPSlider.maxValue = enemyUnit.maxHP;
         EnemyHPSlider.value = enemyUnit.currentHP;
+
+        SkillName1.text = playerUnit.skill1.ToString();
+        SkillName2.text = playerUnit.skill2.ToString();
+        SkillName3.text = playerUnit.skill3.ToString();
 
         yield return new WaitForSeconds(2f);
 
@@ -181,7 +195,8 @@ public class BattleSystem : MonoBehaviour
 
     public void OnSkillButton()
     { 
-    
+        SkillMenu.SetActive(true);
+        StandardMenu.SetActive(false);
     }
 
     public void OnComboButton()
@@ -192,5 +207,26 @@ public class BattleSystem : MonoBehaviour
     public void OnItemButton()
     {
         
+    }
+
+    public void OnSkill1()
+    {
+
+    }
+
+    public void OnSkill2()
+    {
+           
+    }
+
+    public void OnSkill3()
+    {
+
+    }
+
+    public void OnSkillBack()
+    {
+        SkillMenu.SetActive(false);
+        StandardMenu.SetActive(true);
     }
 }

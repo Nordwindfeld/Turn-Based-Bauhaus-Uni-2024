@@ -15,7 +15,7 @@ D:/Unity Default/My project
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-59638
+62032
 -job-worker-count
 11
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/Unity Default/My project
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [63736] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 543701124 [EditorId] 543701124 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [63736] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 543701124 [EditorId] 543701124 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [47224] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 1836218651 [EditorId] 1836218651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [47224] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 1836218651 [EditorId] 1836218651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 11
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 2.75 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.54 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.18f1 (1cb755715f58)
 [Subsystems] Discovering subsystems at path D:/Unity/2023.2.18f1/Editor/Data/Resources/UnitySubsystems
@@ -79,47 +79,59 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2023.2.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56800
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56468
 Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.004896 seconds.
-- Loaded All Assemblies, in  0.390 seconds
+Registered in 0.004238 seconds.
+- Loaded All Assemblies, in  0.338 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.314 seconds
-Domain Reload Profiling: 703ms
-	BeginReloadAssembly (155ms)
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.260 seconds
+Domain Reload Profiling: 597ms
+	BeginReloadAssembly (141ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (137ms)
-		LoadAssemblies (154ms)
+	RebuildCommonClasses (30ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (141ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (133ms)
-			TypeCache.Refresh (132ms)
-				TypeCache.ScanAssembly (121ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (114ms)
+				TypeCache.ScanAssembly (103ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (315ms)
+	FinalizeReload (260ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (256ms)
+		SetupLoadedEditorAssemblies (214ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (133ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -128,151 +140,499 @@ Domain Reload Profiling: 703ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.987 seconds
-Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.830 seconds
+Refreshing native plugins compatible for Editor in 1.81 ms, found 4 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.80 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.71 ms, found 4 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.758 seconds
-Domain Reload Profiling: 1744ms
-	BeginReloadAssembly (405ms)
+- Finished resetting the current domain, in  0.645 seconds
+Domain Reload Profiling: 1473ms
+	BeginReloadAssembly (343ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (493ms)
-		LoadAssemblies (391ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (415ms)
+		LoadAssemblies (330ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (232ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (159ms)
-			BuildScriptInfoCaches (44ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (759ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (145ms)
+				TypeCache.ScanAssembly (133ms)
+			BuildScriptInfoCaches (30ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (645ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (524ms)
+		SetupLoadedEditorAssemblies (449ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (62ms)
-			ProcessInitializeOnLoadAttributes (398ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
-			AfterProcessingInitializeOnLoad (3ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.44 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.58 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 186 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6258 unused Assets / (5.4 MB). Loaded Objects now: 6960.
-Memory consumption went from 178.4 MB to 173.0 MB.
-Total: 12.400000 ms (FindLiveObjects: 1.090600 ms CreateObjectMapping: 0.572200 ms MarkObjects: 7.461200 ms  DeleteObjects: 3.275300 ms)
+Unloading 6259 unused Assets / (5.6 MB). Loaded Objects now: 6961.
+Memory consumption went from 178.4 MB to 172.7 MB.
+Total: 8.600000 ms (FindLiveObjects: 0.768800 ms CreateObjectMapping: 0.382800 ms MarkObjects: 4.555800 ms  DeleteObjects: 2.891900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 249144.785223 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0005.png
-  artifactKey: Guid(922a0f79794ce0746b745bbdcbf1f605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0005.png using Guid(922a0f79794ce0746b745bbdcbf1f605) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '953d6d0b51b0adf698161270265086f2') in 0.0783518 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0011.png
-  artifactKey: Guid(63c3f2a7c85972f4b92ae7b83bec5934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0011.png using Guid(63c3f2a7c85972f4b92ae7b83bec5934) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3b854c2bdc194224627178ab4cf9170f') in 0.0146785 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.416118 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0004.png
-  artifactKey: Guid(b110893dbd46e854cbfa67b60dab454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0004.png using Guid(b110893dbd46e854cbfa67b60dab454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ab9630b5e3a17cdd76a811bfd2b3873a') in 0.0135264 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0008.png
-  artifactKey: Guid(b09ba60dffdabf34ab664ee42bb427c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0008.png using Guid(b09ba60dffdabf34ab664ee42bb427c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75152d73889563f6e0e6d5c2f3fd9732') in 0.0130259 seconds
+  Time since last request: 455720.580544 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0018.png
+  artifactKey: Guid(1bc18db5f74781742b66b28710c5455a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0018.png using Guid(1bc18db5f74781742b66b28710c5455a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7101f08c5ae01d929e28551efa8d2fee') in 0.0685902 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0011.png
-  artifactKey: Guid(63c3f2a7c85972f4b92ae7b83bec5934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0011.png using Guid(63c3f2a7c85972f4b92ae7b83bec5934) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c85a7ae54cc7850ff1d58136b1e316c5') in 0.0107489 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 201.975446 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0001.png
-  artifactKey: Guid(9797179d5d4750a48a24c5055ae49f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0001.png using Guid(9797179d5d4750a48a24c5055ae49f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9b6035a5b4eaa85875e5c67cd6774dbc') in 0.014054 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001577 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0002.png
-  artifactKey: Guid(8a0586213aad93b4dabd6dd85a8ab963) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0002.png using Guid(8a0586213aad93b4dabd6dd85a8ab963) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1d5ff09f46b46a00fb44bd71a49c6b0b') in 0.0155069 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0010.png
-  artifactKey: Guid(560d3aa6e31e033428c7e8922a2be2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0010.png using Guid(560d3aa6e31e033428c7e8922a2be2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ade088d27505a3db6f14aa4732c9343') in 0.0211574 seconds
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0020.png
+  artifactKey: Guid(4cbbe108309ccc14da843a941d05e3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0020.png using Guid(4cbbe108309ccc14da843a941d05e3a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c3c9d83227d49d1db9ed7b714588f2f') in 0.0114365 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0007.png
-  artifactKey: Guid(555d4d5f7af898c4bbee35feaa92d6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0007.png using Guid(555d4d5f7af898c4bbee35feaa92d6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '04d7d6896c029c4296da30b7ef543d1f') in 0.0171602 seconds
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0033.png
+  artifactKey: Guid(329d6f7e4b149c447bad5586b322f6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0033.png using Guid(329d6f7e4b149c447bad5586b322f6d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a7c0f2a91e5658641f30fb8c29b1373c') in 0.0134016 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.821761 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0036.png
+  artifactKey: Guid(7e185fdc2ee177247bff2d1ae41975d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Luana Skill Shoot Attack Left0036.png using Guid(7e185fdc2ee177247bff2d1ae41975d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec07b39cf91aea7d05d0e79db92d40d2') in 0.0108048 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6245 unused Assets / (5.3 MB). Loaded Objects now: 6974.
+Memory consumption went from 147.3 MB to 142.0 MB.
+Total: 8.777900 ms (FindLiveObjects: 0.636200 ms CreateObjectMapping: 0.289800 ms MarkObjects: 4.925500 ms  DeleteObjects: 2.925600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.629 seconds
+Refreshing native plugins compatible for Editor in 1.40 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.568 seconds
+Domain Reload Profiling: 1198ms
+	BeginReloadAssembly (205ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (13ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (48ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (365ms)
+		LoadAssemblies (330ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (123ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (568ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (398ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (53ms)
+			ProcessInitializeOnLoadAttributes (298ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 1.63 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 24 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6258 unused Assets / (5.2 MB). Loaded Objects now: 6975.
+Memory consumption went from 152.6 MB to 147.4 MB.
+Total: 8.845700 ms (FindLiveObjects: 0.889600 ms CreateObjectMapping: 0.429200 ms MarkObjects: 4.793400 ms  DeleteObjects: 2.732500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.68 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6245 unused Assets / (5.3 MB). Loaded Objects now: 6975.
+Memory consumption went from 152.4 MB to 147.1 MB.
+Total: 9.581600 ms (FindLiveObjects: 0.684500 ms CreateObjectMapping: 0.328800 ms MarkObjects: 5.638600 ms  DeleteObjects: 2.928500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6245 unused Assets / (5.1 MB). Loaded Objects now: 6975.
+Memory consumption went from 152.4 MB to 147.3 MB.
+Total: 10.068300 ms (FindLiveObjects: 1.028800 ms CreateObjectMapping: 0.749900 ms MarkObjects: 5.510700 ms  DeleteObjects: 2.777700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 21 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6245 unused Assets / (5.6 MB). Loaded Objects now: 6975.
+Memory consumption went from 152.4 MB to 146.9 MB.
+Total: 9.249700 ms (FindLiveObjects: 0.673900 ms CreateObjectMapping: 0.322000 ms MarkObjects: 5.081700 ms  DeleteObjects: 3.171300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.619 seconds
+Refreshing native plugins compatible for Editor in 1.48 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.567 seconds
+Domain Reload Profiling: 1187ms
+	BeginReloadAssembly (201ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (14ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (42ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (360ms)
+		LoadAssemblies (330ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (141ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (120ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (568ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (399ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (299ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
+Refreshing native plugins compatible for Editor in 1.61 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6258 unused Assets / (5.6 MB). Loaded Objects now: 6975.
+Memory consumption went from 154.4 MB to 148.8 MB.
+Total: 7.972800 ms (FindLiveObjects: 0.633300 ms CreateObjectMapping: 0.304700 ms MarkObjects: 4.240000 ms  DeleteObjects: 2.794000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 7580.087638 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0001.png
+  artifactKey: Guid(6e94f40486faf3c40a9d1ad437a87eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0001.png using Guid(6e94f40486faf3c40a9d1ad437a87eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19b130dd87d312f86d819496986d1e4e') in 0.1726288 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0006.png
-  artifactKey: Guid(04a16e6bfd222974f9000b7b19828e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0006.png using Guid(04a16e6bfd222974f9000b7b19828e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49df95b1e5dac14dbc27e6fed5ecf7f5') in 0.0190405 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0011.png
+  artifactKey: Guid(d20eb9d989b2f8e49b0787dfa77fda71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0011.png using Guid(d20eb9d989b2f8e49b0787dfa77fda71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c34e7460331ba288cfdd659fcbc91e1') in 0.0113902 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0008.png
-  artifactKey: Guid(b09ba60dffdabf34ab664ee42bb427c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0008.png using Guid(b09ba60dffdabf34ab664ee42bb427c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '43063504840a8ff60da573032376376d') in 0.0149066 seconds
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0009.png
+  artifactKey: Guid(fddaf4a4749cb1945b3fe59651e628bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0009.png using Guid(fddaf4a4749cb1945b3fe59651e628bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8aacc989298132b806937ba05fca834b') in 0.0135356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0020.png
+  artifactKey: Guid(0c0b846e001ac9f4f83adfe79d8b388a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0020.png using Guid(0c0b846e001ac9f4f83adfe79d8b388a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edfd2a91e5e8e03a0926e6ff3caf7c61') in 0.0111108 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0023.png
+  artifactKey: Guid(6bc7e221550237b4f90b12c6ecb73d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0023.png using Guid(6bc7e221550237b4f90b12c6ecb73d9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae9f389239b15e56d957477837b790f9') in 0.0139724 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000021 seconds.
-  path: Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0004.png
-  artifactKey: Guid(b110893dbd46e854cbfa67b60dab454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Stand/Front/Luana Stand Front0004.png using Guid(b110893dbd46e854cbfa67b60dab454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6c64e2b46158627ee5e878819fdf2852') in 0.0151854 seconds
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0006.png
+  artifactKey: Guid(308b2aa28b147914fabccaa11ca6b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0006.png using Guid(308b2aa28b147914fabccaa11ca6b791) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19c834a6377ab4bcb7f4945c5d1ec176') in 0.017581 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0014.png
+  artifactKey: Guid(3724ea27933c84e4c875264cf8a2979c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0014.png using Guid(3724ea27933c84e4c875264cf8a2979c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3854b8f44b0415773ce7a12a50d9c7d8') in 0.0143478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0017.png
+  artifactKey: Guid(5d0d0ebb57cc5a146bb4474731eb0a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0017.png using Guid(5d0d0ebb57cc5a146bb4474731eb0a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '678e8c233c75ab0eef192de9717e0ea2') in 0.0144336 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0012.png
+  artifactKey: Guid(6e3d53599df872a409717ddadba3d0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0012.png using Guid(6e3d53599df872a409717ddadba3d0ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1984b81998bea56ccde429914364efa7') in 0.0170611 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0021.png
+  artifactKey: Guid(d1c82b43de692f744ab15336bdcdb3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0021.png using Guid(d1c82b43de692f744ab15336bdcdb3e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9607390b6f6f70025bdd24db14c2dbef') in 0.0132918 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0002.png
+  artifactKey: Guid(c04be929f3e85a340906396bfdb310eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0002.png using Guid(c04be929f3e85a340906396bfdb310eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8dc6ccc6284ecb1da57e0f10a5229ef7') in 0.0132647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.016424 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0004.png
+  artifactKey: Guid(1d63837e30cdaeb4b904c190662e40c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0004.png using Guid(1d63837e30cdaeb4b904c190662e40c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31111f3d5eb4baf4fb6096f46750ac3f') in 0.0124518 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0010.png
+  artifactKey: Guid(41bd84a1b5fd17a4389ee8996c5e73b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0010.png using Guid(41bd84a1b5fd17a4389ee8996c5e73b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4f91476f573704cf6af4ec24dd674c2b') in 0.0117279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0007.png
+  artifactKey: Guid(1a071a1acc947484f89acc1ff6962465) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0007.png using Guid(1a071a1acc947484f89acc1ff6962465) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8dcb7ba197188762c2fe3b3b2b35128') in 0.0165556 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0011.png
+  artifactKey: Guid(d20eb9d989b2f8e49b0787dfa77fda71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0011.png using Guid(d20eb9d989b2f8e49b0787dfa77fda71) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e11a64c5390fa67d8bf2606465026caa') in 0.0153238 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0020.png
+  artifactKey: Guid(0c0b846e001ac9f4f83adfe79d8b388a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0020.png using Guid(0c0b846e001ac9f4f83adfe79d8b388a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '920cfcc75096c7f723895dcf89e92627') in 0.0117139 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0008.png
+  artifactKey: Guid(3d3ab7e0dc5f908468a429a55b5bd407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0008.png using Guid(3d3ab7e0dc5f908468a429a55b5bd407) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb6238eca3b3c32a99e5bb01226eacee') in 0.0127313 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0025.png
+  artifactKey: Guid(09ee527cab9681d4a9028d2358479084) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Feuerwaffe Left/Shoot/Luana Skill Shoot Attack Left Bullet0025.png using Guid(09ee527cab9681d4a9028d2358479084) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '133fae9e3ac2eec2719712c05c91dd73') in 0.0088221 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 223.049098 seconds.
+  path: Assets/Prefabs/Battle/Luana Stand Left Skill Attack Weapon Fail.anim
+  artifactKey: Guid(0671c31b159fc5e4f9b9da3c85086964) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battle/Luana Stand Left Skill Attack Weapon Fail.anim using Guid(0671c31b159fc5e4f9b9da3c85086964) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd4ce18f5372240eb349d1270ded3f7bb') in 0.0015557 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.973599 seconds.
+  path: Assets/Assets/Characters/Luana/Luana Animation/Luana_0.controller
+  artifactKey: Guid(e2192dd558479514a9a2678d465e0d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Luana Animation/Luana_0.controller using Guid(e2192dd558479514a9a2678d465e0d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a832638d9ff52e430b2981f1a595c620') in 0.0039749 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 14
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.688 seconds
+Refreshing native plugins compatible for Editor in 1.70 ms, found 4 plugins.
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.680 seconds
+Domain Reload Profiling: 1372ms
+	BeginReloadAssembly (229ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (15ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (66ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (399ms)
+		LoadAssemblies (352ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (155ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (131ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (681ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (476ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (355ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (2ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Refreshing native plugins compatible for Editor in 1.62 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6258 unused Assets / (5.1 MB). Loaded Objects now: 6992.
+Memory consumption went from 157.4 MB to 152.2 MB.
+Total: 8.962000 ms (FindLiveObjects: 0.686800 ms CreateObjectMapping: 0.335300 ms MarkObjects: 5.187600 ms  DeleteObjects: 2.751700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 98.109692 seconds.
+  path: Assets/Prefabs/Battle/Player.prefab
+  artifactKey: Guid(ee1359b54aad5c841ba66a59180dd6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battle/Player.prefab using Guid(ee1359b54aad5c841ba66a59180dd6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4379e6eb7e80eca549d9c3594415f181') in 0.2715326 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 170
+

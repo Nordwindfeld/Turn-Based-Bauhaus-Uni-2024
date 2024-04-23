@@ -19,6 +19,10 @@ public class Unit : MonoBehaviour
     public int attack;
     public int defense;
 
+    public string skill1;
+    public string skill2;
+    public string skill3;
+
     public enum UnitType
     {
         Fire,
