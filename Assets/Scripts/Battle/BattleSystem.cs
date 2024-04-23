@@ -4,12 +4,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static UnityEngine.EventSystems.EventTrigger;
 
-public enum BattleState { START, PLAYERTURN, ENEMYRTURN, WON, LOST }
+
 public class BattleSystem : MonoBehaviour
 {
+    public enum BattleState { START, PLAYERTURN, ENEMYRTURN, WON, LOST }
+
+    public EnemySelectionState EnemyState;
+    public enum EnemySelectionState { NOTHING, ENEMY};
+
     public GameObject playerPrefab;
     public GameObject enemyPrefab;
+
 
     public Transform playerPosition;
     public Transform enemyPosition;
@@ -43,10 +50,19 @@ public class BattleSystem : MonoBehaviour
     int PlayerDamage;
     int EnemyDamage;
 
+    public GameObject EnemySelectionPrefab;
+    private GameObject EnemySelectionPointer;
+
     public GameObject StandardMenu;
     public GameObject SkillMenu;
     public GameObject ComboMenu;
     public GameObject ItemMenu;
+
+    private GameObject playerVariables;
+    public GameObject enemyVariables;
+    public Vector3 EnemySelectionPointerPosition { get; private set; }
+
+    public int SkillSelection;
 
     void Start()
     {
@@ -55,12 +71,33 @@ public class BattleSystem : MonoBehaviour
         BattleMenu.SetActive(false);
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            EnemyState = EnemySelectionState.NOTHING;
+
+            Skills skills = playerVariables.GetComponent<Skills>();
+
+            if (SkillSelection == 1)
+            {
+                skills.SkillCharging();
+            }
+
+            if (EnemySelectionPointer != null)
+            {
+                Destroy(EnemySelectionPointer);
+                EnemySelectionPointer = null;
+            }
+        }
+    }
+
     IEnumerator SetupBattle()
     {
-        GameObject playerVariables = Instantiate(playerPrefab, playerPosition);
+        playerVariables = Instantiate(playerPrefab, playerPosition);
         playerUnit = playerVariables.GetComponent<Unit>();
 
-        GameObject enemyVariables = Instantiate(enemyPrefab, enemyPosition);
+        enemyVariables = Instantiate(enemyPrefab, enemyPosition);
         enemyUnit = enemyVariables.GetComponent<Unit>();
 
         EnemyNameText.text = enemyUnit.unitName;
@@ -211,22 +248,42 @@ public class BattleSystem : MonoBehaviour
 
     public void OnSkill1()
     {
-
+        if (state == BattleState.PLAYERTURN)
+        {
+            EnemySelection(1);
+            Skills skills = playerVariables.GetComponent<Skills>();
+        }
     }
 
     public void OnSkill2()
     {
-           
+        EnemySelection(2);
     }
 
     public void OnSkill3()
     {
-
+        EnemySelection(3);
     }
 
     public void OnSkillBack()
     {
         SkillMenu.SetActive(false);
         StandardMenu.SetActive(true);
+    }
+
+    public void EnemySelection(int skill)
+    {
+        BattleMenu.SetActive(false);
+        SpriteRenderer enemySpriteRenderer = enemyVariables.GetComponent<SpriteRenderer>();
+        Vector3 spriteSize = enemySpriteRenderer.bounds.size;
+        Vector3 enemySelectionPointerPosition = enemyPosition.position + new Vector3(0, spriteSize.y/2 + spriteSize.y / 8, 0);
+        if (EnemySelectionPointer != null)
+        {
+            Destroy(EnemySelectionPointer);
+        }
+        EnemySelectionPointer = Instantiate(EnemySelectionPrefab, enemySelectionPointerPosition, Quaternion.identity);
+
+        EnemyState = EnemySelectionState.ENEMY;
+        SkillSelection = skill;
     }
 }

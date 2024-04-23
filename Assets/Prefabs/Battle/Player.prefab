@@ -203,6 +203,7 @@ MonoBehaviour:
   shrinkingCircle: {fileID: 0}
   Skill1FirePoint: {fileID: 3550000225466625653}
   bulletPrefab: {fileID: 4692578422445344306, guid: 45f37a29df5ab1043a81078ff9cfdcd8, type: 3}
+  characterName: 1
 --- !u!1 &7304001037477127692
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - player
   - battlemenu
+  - battlesystem
   layers:
   - Default
   - TransparentFX
