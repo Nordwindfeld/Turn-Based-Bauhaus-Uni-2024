@@ -562,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyState: 0
-  playerPrefab: {fileID: 974863192918287357, guid: ee1359b54aad5c841ba66a59180dd6f1, type: 3}
+  playerPrefab: {fileID: 7761923253025470549, guid: c5c9c076d47761341ab255f36b7ace01, type: 3}
   enemyPrefab: {fileID: 1168583628474816241, guid: 8c6ee510287b3bc449350b85a121f02b, type: 3}
   playerPosition: {fileID: 426868242}
   enemyPosition: {fileID: 1039972428}
@@ -584,11 +584,16 @@ MonoBehaviour:
   BattleMenu: {fileID: 143682597}
   EnemySelectionPrefab: {fileID: 1103627960513017285, guid: d90377d46dd46bd4a8bc7bed15e254ec, type: 3}
   StandardMenu: {fileID: 478268324}
+  StandardMenuFirstButton: {fileID: 1240337919}
   SkillMenu: {fileID: 1151940221}
+  SKillMenuFirstButton: {fileID: 595131829}
   ComboMenu: {fileID: 0}
   ItemMenu: {fileID: 0}
+  eventSystem: {fileID: 1809956932}
   enemyVariables: {fileID: 0}
   SkillSelection: 0
+  RythmPrefab: {fileID: 6891305210724889683, guid: a882dbbb358b2454487503f2b97f5d81, type: 3}
+  currentRythmPrefab: {fileID: 0}
 --- !u!4 &345120585
 Transform:
   m_ObjectHideFlags: 0
@@ -688,7 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -1366,10 +1371,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1200138322}
+    m_SelectOnDown: {fileID: 1329968167}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -1484,7 +1489,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 00000000f300a3cb
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -2461,10 +2466,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1329968167}
+    m_SelectOnDown: {fileID: 1200138322}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3058,10 +3063,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 1095333832}
+    m_SelectOnDown: {fileID: 595131831}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3327,7 +3332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3460,10 +3465,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 4
     m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
+    m_SelectOnUp: {fileID: 595131831}
+    m_SelectOnDown: {fileID: 1095333832}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3705,7 +3710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -4246,7 +4251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 0
+    m_Mode: 3
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}

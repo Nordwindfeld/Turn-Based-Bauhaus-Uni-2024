@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\Unity Default\\My project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity default\\my project\\assets\\scripts\\battle\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity default\\my project\\assets\\scripts\\battle\\battlesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\Unity Default\\My project\\assets\\scripts\\battle\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity default\\my project\\assets\\scripts\\battle\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\skills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\unity default\\my project\\assets\\scripts\\battle\\rythmscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\rythmscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,49 +21,50 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 215,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Unit.cs",
-              "DocumentMoniker": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\Unit.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Unit.cs",
-              "ToolTip": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\Unit.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\Unit.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T14:51:34.029Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BattleSystem.cs",
-              "DocumentMoniker": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\BattleSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSystem.cs",
-              "ToolTip": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\BattleSystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSystem.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAAwwI8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T13:59:36.533Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 185,
+          "DockedWidth": 177,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BattleSystem.cs",
+              "DocumentMoniker": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "ToolTip": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSystem.cs",
+              "ViewState": "AQIAANoAAAAAAAAAAAAswPMAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-26T10:32:49.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RythmScript.cs",
+              "DocumentMoniker": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\RythmScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\RythmScript.cs",
+              "ToolTip": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\RythmScript.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\RythmScript.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-24T09:20:31.896Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 217,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Skills.cs",
               "DocumentMoniker": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\Skills.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\Skills.cs",
               "ToolTip": "D:\\Unity Default\\My project\\Assets\\Scripts\\Battle\\Skills.cs",
               "RelativeToolTip": "Assets\\Scripts\\Battle\\Skills.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAwwD8AAAAeAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowDAAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T15:53:30.341Z",
               "EditorCaption": ""

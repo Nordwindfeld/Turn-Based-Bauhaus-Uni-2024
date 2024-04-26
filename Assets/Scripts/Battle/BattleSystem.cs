@@ -5,11 +5,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using static UnityEngine.EventSystems.EventTrigger;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
+using UnityEngine.EventSystems;
 
 
 public class BattleSystem : MonoBehaviour
 {
-    public enum BattleState { START, PLAYERTURN, ENEMYRTURN, WON, LOST }
+    public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
     public EnemySelectionState EnemyState;
     public enum EnemySelectionState { NOTHING, ENEMY};
@@ -54,15 +56,22 @@ public class BattleSystem : MonoBehaviour
     private GameObject EnemySelectionPointer;
 
     public GameObject StandardMenu;
+    [SerializeField] public GameObject StandardMenuFirstButton;
     public GameObject SkillMenu;
+    [SerializeField] public GameObject SKillMenuFirstButton;
     public GameObject ComboMenu;
     public GameObject ItemMenu;
+    public EventSystem eventSystem;
 
     private GameObject playerVariables;
     public GameObject enemyVariables;
     public Vector3 EnemySelectionPointerPosition { get; private set; }
 
     public int SkillSelection;
+
+    public GameObject RythmPrefab;
+    public GameObject currentRythmPrefab;
+    public Vector3 RythmPrefabPosition { get; private set; }
 
     void Start()
     {
@@ -73,21 +82,29 @@ public class BattleSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        SpriteRenderer playerSpriteRenderer = playerVariables.GetComponent<SpriteRenderer>();
+        Vector3 PlayerSpriteSize = playerSpriteRenderer.bounds.size;
+        Vector3 RythmPrefabPosition = playerPosition.position + new Vector3(PlayerSpriteSize.y, PlayerSpriteSize.y/2, 0);
+        if (EnemyState == EnemySelectionState.ENEMY)
         {
-            EnemyState = EnemySelectionState.NOTHING;
-
             Skills skills = playerVariables.GetComponent<Skills>();
 
-            if (SkillSelection == 1)
+            if (Input.GetButtonDown("Enter"))
             {
-                skills.SkillCharging();
-            }
-
-            if (EnemySelectionPointer != null)
-            {
-                Destroy(EnemySelectionPointer);
-                EnemySelectionPointer = null;
+                if (EnemyState == EnemySelectionState.ENEMY && !BattleMenu.activeSelf)
+                {
+                    if (SkillSelection == 1)
+                    {
+                        currentRythmPrefab = Instantiate(RythmPrefab, RythmPrefabPosition, Quaternion.identity);
+                        skills.SkillCharging();
+                    }
+                    if (EnemySelectionPointer != null)
+                    {
+                        Destroy(EnemySelectionPointer);
+                        EnemySelectionPointer = null;
+                    }
+                    EnemyState = EnemySelectionState.NOTHING;
+                }
             }
         }
     }
@@ -124,12 +141,16 @@ public class BattleSystem : MonoBehaviour
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
+        EventSystem.current.SetSelectedGameObject(StandardMenuFirstButton);
     }
 
     void SetUpBattleMenu()
     {
         BattleMenu.transform.position = playerPosition.position + new Vector3(775, 390, 0);
         BattleMenu.SetActive(true);
+        SkillMenu.SetActive(false);
+        StandardMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(StandardMenuFirstButton);
     }
 
     public void CloseBattleMenu()
@@ -143,7 +164,7 @@ public class BattleSystem : MonoBehaviour
         yield return PerformAttack(playerUnit, enemyUnit, EnemyHPSlider);
     }
 
-    IEnumerator EnemyTurn()
+    public IEnumerator EnemyTurn()
     {
         yield return PerformAttack(enemyUnit, playerUnit, PlayerHPSlider);
     }
@@ -192,7 +213,7 @@ public class BattleSystem : MonoBehaviour
         }
         else
         {
-            state = (defender == playerUnit) ? BattleState.PLAYERTURN : BattleState.ENEMYRTURN;
+            state = (defender == playerUnit) ? BattleState.PLAYERTURN : BattleState.ENEMYTURN;
             if (state == BattleState.PLAYERTURN)
             {
                 PlayerTurn();
@@ -220,6 +241,7 @@ public class BattleSystem : MonoBehaviour
     void PlayerTurn()
     {
         SetUpBattleMenu();
+        EventSystem.current.SetSelectedGameObject(StandardMenuFirstButton);
     }
 
     public void OnAttackButton()
@@ -234,6 +256,7 @@ public class BattleSystem : MonoBehaviour
     { 
         SkillMenu.SetActive(true);
         StandardMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(SKillMenuFirstButton);
     }
 
     public void OnComboButton()
@@ -269,11 +292,13 @@ public class BattleSystem : MonoBehaviour
     {
         SkillMenu.SetActive(false);
         StandardMenu.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(StandardMenuFirstButton);
     }
 
     public void EnemySelection(int skill)
     {
         BattleMenu.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(null);
         SpriteRenderer enemySpriteRenderer = enemyVariables.GetComponent<SpriteRenderer>();
         Vector3 spriteSize = enemySpriteRenderer.bounds.size;
         Vector3 enemySelectionPointerPosition = enemyPosition.position + new Vector3(0, spriteSize.y/2 + spriteSize.y / 8, 0);

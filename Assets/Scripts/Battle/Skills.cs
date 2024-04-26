@@ -6,57 +6,56 @@ public class Skills : MonoBehaviour
 {
 
     public Animator animator;
-    public GameObject chargingUI;
-    public Image shrinkingCircle;
     public Transform Skill1FirePoint;
     public GameObject bulletPrefab;
     private GameObject currentBullet;
 
-    enum SkillState { Ready, Charging, Attacking, Cancelled }
+    public enum SkillState { Ready, Charging, Attacking, Cancelled }
     public enum PlayerState { Nobody, Luana }
     public PlayerState characterName;
 
     private SkillState currentState = SkillState.Ready;
-    private float circleShrinkSpeed = 1.0f;
-    private float currentCircleScale = 1.0f;
 
-    private BattleSystem battleSystem;
+    private GameObject battleSystem;
     private Vector3 enemyPosition;
-    private int shoot;
+    public int Rythm;
 
+    private GameObject rythmScript;
+
+
+    [System.Obsolete]
     void Start()
     {
-        battleSystem = FindObjectOfType<BattleSystem>();
-        shoot = 0;
+        battleSystem = GameObject.FindWithTag("battlesystem");
+        rythmScript = GameObject.FindWithTag("RythmusScript");
     }
 
 
     void Update()
     {
-        if(currentState == SkillState.Charging && shoot == 1)
+        if(currentState == SkillState.Charging)
         {
-            if (Input.GetButtonDown("Timing"))
+            if (Input.GetButtonDown("Timing") && rythmScript.GetComponent<RythmScript>().CorrectTiming == 1)
             {
-                shoot = 0;
                 PerformAttack();
             }
         }
+
+
     }
 
     public void SkillCharging()
     {
             currentState = SkillState.Charging;
-            currentBullet = Instantiate(bulletPrefab, Skill1FirePoint.position, Skill1FirePoint.rotation);
             animator.Play("Luana Stand Left Skill Attack Weapon Charge");
     }
 
-    private void PerformAttack()
+    public void PerformAttack()
     {
         if (currentState == SkillState.Charging)
         {
-            currentState = SkillState.Attacking;
             animator.Play("Luana Stand Left Skill Attack Weapon Shoot");
-            StartCoroutine(MoveBulletToEnemy(currentBullet, battleSystem.EnemySelectionPointerPosition, 1f));
+            StartCoroutine(MoveBulletToEnemy(currentBullet, battleSystem.GetComponent<BattleSystem>().EnemySelectionPointerPosition*2, 1f));
         }
     }
 
@@ -65,6 +64,8 @@ public class Skills : MonoBehaviour
     {
         Destroy(currentBullet);
         animator.Play("Luana Stand Left Skill Attack Weapon Fail");
+        currentState = SkillState.Ready;
+        StartCoroutine(battleSystem.GetComponent<BattleSystem>().EnemyTurn());
     }
 
     private IEnumerator MoveBulletToEnemy(GameObject bullet, Vector3 targetPosition, float duration)
@@ -83,11 +84,13 @@ public class Skills : MonoBehaviour
 
     }
 
-    public void PrepareForSkillCharging()
+    public void BulletAppears()
     {
-        if (characterName == PlayerState.Luana && currentState != SkillState.Charging)
-        {
-            currentState = SkillState.Ready;
-        }
+        currentBullet = Instantiate(bulletPrefab, Skill1FirePoint.position, Skill1FirePoint.rotation);
+    }
+
+    public void Ready()
+    {
+        currentState = SkillState.Ready;
     }
 }
