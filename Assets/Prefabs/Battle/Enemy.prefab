@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitName: Test
-  unitLevel: 2
+  unitLevel: 20
   maxHP: 100
   currentHP: 100
   maxTP: 0
@@ -56,6 +56,9 @@ MonoBehaviour:
   CritChance: 1
   attack: 22
   defense: 10
+  skillAttack1: 0
+  skillAttack2: 0
+  skillAttack3: 0
   skill1: 
   skill2: 
   skill3: 

@@ -25,7 +25,7 @@ public class RythmScript : MonoBehaviour
         {
             Anim.Play("CorrectField");
             PlayerScript = GameObject.FindWithTag("Player");
-            PlayerScript.GetComponent<Skills>().PerformAttack();
+            PlayerScript.GetComponent<Skills>().Attack();
             CorrectHits++;
             float CorrectMultiplier = Mathf.Sqrt(CorrectHits);
             PlayerScript.GetComponent<Animator>().speed = 1f * CorrectMultiplier;

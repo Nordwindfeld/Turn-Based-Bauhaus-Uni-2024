@@ -182,6 +182,9 @@ MonoBehaviour:
   CritChance: 1
   attack: 30
   defense: 25
+  skillAttack1: 5
+  skillAttack2: 20
+  skillAttack3: 30
   skill1: SHOOT
   skill2: SKILL 2
   skill3: SKILL 3
@@ -198,8 +201,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1609672042616398127}
-  chargingUI: {fileID: 0}
-  shrinkingCircle: {fileID: 0}
   Skill1FirePoint: {fileID: 6734196438565059112}
   bulletPrefab: {fileID: 4692578422445344306, guid: 45f37a29df5ab1043a81078ff9cfdcd8, type: 3}
   characterName: 1

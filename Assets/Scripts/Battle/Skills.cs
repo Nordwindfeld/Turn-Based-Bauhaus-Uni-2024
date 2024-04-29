@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -37,7 +38,7 @@ public class Skills : MonoBehaviour
         {
             if (Input.GetButtonDown("Timing") && rythmScript.GetComponent<RythmScript>().CorrectTiming == 1)
             {
-                PerformAttack();
+                Attack();
             }
         }
 
@@ -50,12 +51,13 @@ public class Skills : MonoBehaviour
             animator.Play("Luana Stand Left Skill Attack Weapon Charge");
     }
 
-    public void PerformAttack()
+    public void Attack()
     {
         if (currentState == SkillState.Charging)
         {
             animator.Play("Luana Stand Left Skill Attack Weapon Shoot");
-            StartCoroutine(MoveBulletToEnemy(currentBullet, battleSystem.GetComponent<BattleSystem>().EnemySelectionPointerPosition*2, 1f));
+            StartCoroutine(MoveBulletToEnemy(currentBullet, battleSystem.GetComponent<BattleSystem>().enemyPosition.position, 1f));
+            battleSystem.GetComponent<BattleSystem>().PlayerAttack();
         }
     }
 
@@ -65,7 +67,7 @@ public class Skills : MonoBehaviour
         Destroy(currentBullet);
         animator.Play("Luana Stand Left Skill Attack Weapon Fail");
         currentState = SkillState.Ready;
-        StartCoroutine(battleSystem.GetComponent<BattleSystem>().EnemyTurn());
+        battleSystem.GetComponent<BattleSystem>().CheckEnemyStatusAndContinue();
     }
 
     private IEnumerator MoveBulletToEnemy(GameObject bullet, Vector3 targetPosition, float duration)
@@ -82,7 +84,18 @@ public class Skills : MonoBehaviour
 
         bullet.transform.position = targetPosition;
 
-    }
+        yield return StartCoroutine(battleSystem.GetComponent<BattleSystem>().PerformAttack(battleSystem.GetComponent<BattleSystem>().playerUnit, battleSystem.GetComponent<BattleSystem>().SelectedEnemyUnit, battleSystem.GetComponent<BattleSystem>().SelectedEnemyHPSlider));
+
+
+        yield return new WaitForSeconds(0.5f);
+        Animator bulletAnimator = bullet.GetComponent<Animator>();
+        if (bulletAnimator != null)
+        {
+            bulletAnimator.Play("ShootExplode");
+        }
+
+        Destroy(bullet, 0.5f);
+}
 
     public void BulletAppears()
     {

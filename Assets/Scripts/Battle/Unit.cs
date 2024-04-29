@@ -18,6 +18,9 @@ public class Unit : MonoBehaviour
     public int CritChance;
     public int attack;
     public int defense;
+    public int skillAttack1;
+    public int skillAttack2;
+    public int skillAttack3;
 
     public string skill1;
     public string skill2;
