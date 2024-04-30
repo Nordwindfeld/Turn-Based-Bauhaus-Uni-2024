@@ -15,7 +15,7 @@ D:/Unity Default/My project
 -logFile
 Logs/AssetImportWorker9.log
 -srvPort
-59383
+58038
 -job-worker-count
 11
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/Unity Default/My project
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [42384] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 1008842628 [EditorId] 1008842628 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [42384] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 1008842628 [EditorId] 1008842628 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [32592] Host "[IP] 172.26.80.1 [Port] 0 [Flags] 2 [Guid] 2912996651 [EditorId] 2912996651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [32592] Host "[IP] 172.26.80.1 [Port] 0 [Flags] 2 [Guid] 2912996651 [EditorId] 2912996651 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 11
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 2.90 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.65 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.18f1 (1cb755715f58)
 [Subsystems] Discovering subsystems at path D:/Unity/2023.2.18f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2023.2.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -95,43 +95,43 @@ Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.005336 seconds.
-- Loaded All Assemblies, in  0.352 seconds
+Registered in 0.005568 seconds.
+- Loaded All Assemblies, in  0.390 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.271 seconds
-Domain Reload Profiling: 623ms
-	BeginReloadAssembly (149ms)
+- Finished resetting the current domain, in  0.301 seconds
+Domain Reload Profiling: 690ms
+	BeginReloadAssembly (159ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (120ms)
-		LoadAssemblies (149ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (138ms)
+		LoadAssemblies (159ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (117ms)
-			TypeCache.Refresh (116ms)
-				TypeCache.ScanAssembly (105ms)
+		AnalyzeDomain (135ms)
+			TypeCache.Refresh (134ms)
+				TypeCache.ScanAssembly (123ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (272ms)
+	FinalizeReload (301ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (220ms)
+		SetupLoadedEditorAssemblies (252ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (137ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (6ms)
+			ProcessInitializeOnLoadAttributes (157ms)
+			ProcessInitializeOnLoadMethodAttributes (51ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -154,53 +154,381 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.851 seconds
-Refreshing native plugins compatible for Editor in 1.45 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.895 seconds
+Refreshing native plugins compatible for Editor in 1.44 ms, found 4 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.67 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.682 seconds
-Domain Reload Profiling: 1532ms
-	BeginReloadAssembly (358ms)
+- Finished resetting the current domain, in  0.693 seconds
+Domain Reload Profiling: 1586ms
+	BeginReloadAssembly (394ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (29ms)
-	RebuildNativeTypeToScriptingClass (9ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (10ms)
 	initialDomainReloadingComplete (31ms)
-	LoadAllAssembliesAndSetupDomain (422ms)
-		LoadAssemblies (353ms)
+	LoadAllAssembliesAndSetupDomain (424ms)
+		LoadAssemblies (359ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (184ms)
-			TypeCache.Refresh (144ms)
+		AnalyzeDomain (187ms)
+			TypeCache.Refresh (146ms)
 				TypeCache.ScanAssembly (131ms)
 			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (683ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (693ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (476ms)
+		SetupLoadedEditorAssemblies (475ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (3ms)
+			SetLoadedEditorAssemblies (5ms)
 			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (365ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadAttributes (359ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.84 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 186 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6261 unused Assets / (5.0 MB). Loaded Objects now: 6963.
-Memory consumption went from 178.4 MB to 173.4 MB.
-Total: 12.308800 ms (FindLiveObjects: 1.059600 ms CreateObjectMapping: 0.587700 ms MarkObjects: 7.348000 ms  DeleteObjects: 3.312100 ms)
+Unloading 6261 unused Assets / (5.4 MB). Loaded Objects now: 6963.
+Memory consumption went from 178.4 MB to 173.0 MB.
+Total: 8.395200 ms (FindLiveObjects: 0.681000 ms CreateObjectMapping: 0.330400 ms MarkObjects: 4.803400 ms  DeleteObjects: 2.579900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 10777.817921 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '395c607971e55c570b23102a095b7997') in 0.0275701 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 21
+
+========================================================================
+Received Import Request.
+  Time since last request: 246.459179 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0001.png
+  artifactKey: Guid(65d3252185b983b469e2a8efd7415ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0001.png using Guid(65d3252185b983b469e2a8efd7415ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a284492f3f988bb09829ba85cf0481f2') in 0.0612084 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0014.png
+  artifactKey: Guid(23a17de463ca5e7419cc0dd304007923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0014.png using Guid(23a17de463ca5e7419cc0dd304007923) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e621591fef8275382d43dd8ca5e57174') in 0.0125713 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0005.png
+  artifactKey: Guid(a7fa79fc081d9354f8d723e1b27af92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0005.png using Guid(a7fa79fc081d9354f8d723e1b27af92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f619fc94314bbf656c2d71099170a2f0') in 0.0129982 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0040.png
+  artifactKey: Guid(6127b5ed67c84ed4f8cf184b36cd7e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0040.png using Guid(6127b5ed67c84ed4f8cf184b36cd7e4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd705a13bf44bb28a11660f31e2b25520') in 0.0130099 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0050.png
+  artifactKey: Guid(77ddb3ddf8cd5e54a898f9aacb9774a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0050.png using Guid(77ddb3ddf8cd5e54a898f9aacb9774a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b4ad00f4da4472b82fdef131699e6113') in 0.0118828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0043.png
+  artifactKey: Guid(1dd412346e1d98040b0ec53e0794e9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0043.png using Guid(1dd412346e1d98040b0ec53e0794e9ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc5219a2956717e73fb039810be18213') in 0.0117423 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0015.png
+  artifactKey: Guid(691ee1ba7f8d4b948b43651f4d976432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0015.png using Guid(691ee1ba7f8d4b948b43651f4d976432) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'be2a9a8a7c48b0e141e41ba14cfe627e') in 0.0107403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0006.png
+  artifactKey: Guid(cf463caa603dfaa4eb140d8f03d2d3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0006.png using Guid(cf463caa603dfaa4eb140d8f03d2d3bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5561a9b126bfe7cdc5e61512fa832c52') in 0.0101794 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0030.png
+  artifactKey: Guid(e053c1ef46b0e394485726ab882c9cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0030.png using Guid(e053c1ef46b0e394485726ab882c9cc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f73d0da1375fd31fadcc15e27ceac541') in 0.0112279 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0045.png
+  artifactKey: Guid(1b9e459ab2645164898fd4295bff8785) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0045.png using Guid(1b9e459ab2645164898fd4295bff8785) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '16f0105c538d7291a7156a2c5112cd09') in 0.0139873 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0060.png
+  artifactKey: Guid(601f26e5bfda853479c009f376b0f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0060.png using Guid(601f26e5bfda853479c009f376b0f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e0759159cd730ac372149405b43f44e0') in 0.0124894 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0023.png
+  artifactKey: Guid(09e9449ce40a62a438e8058caea103ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0023.png using Guid(09e9449ce40a62a438e8058caea103ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79347104aebdfa90a2ad48d1937fc354') in 0.0114155 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0054.png
+  artifactKey: Guid(b8146ee429c469745b069aa976f35833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0054.png using Guid(b8146ee429c469745b069aa976f35833) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '824ec48c82d2dcffc0c307aca2d5a3d8') in 0.010758 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0012.png
+  artifactKey: Guid(c9ccc157ade99964e86bc6ab8e136f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0012.png using Guid(c9ccc157ade99964e86bc6ab8e136f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f63131b2e175c8f8c219e6c243116b54') in 0.01041 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0042.png
+  artifactKey: Guid(65a3cdc8539c1d640a7a804fdf124eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0042.png using Guid(65a3cdc8539c1d640a7a804fdf124eb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '97a0b2cfa391f1bd33ed08af57578471') in 0.0112838 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0055.png
+  artifactKey: Guid(8a5192e2940159b4bb2866e610397fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0055.png using Guid(8a5192e2940159b4bb2866e610397fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66bc2d7d23ea832ab9567a8daf3c6aa6') in 0.0103384 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0021.png
+  artifactKey: Guid(59c4fb92fa93bec4c83b768cc7b3fa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0021.png using Guid(59c4fb92fa93bec4c83b768cc7b3fa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a784fd6861ae29b6bff273a787939f3') in 0.0109958 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0036.png
+  artifactKey: Guid(9943d5a64ba4fcc40a94996babc8c5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0036.png using Guid(9943d5a64ba4fcc40a94996babc8c5d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e99d78a12e491f33ba655b96d510c109') in 0.0111403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0047.png
+  artifactKey: Guid(cd0acd419b17344408b2af5189f79140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0047.png using Guid(cd0acd419b17344408b2af5189f79140) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2cf95ef33b6cd8bb3d933716cbf03a16') in 0.011078 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0004.png
+  artifactKey: Guid(3b93bd9a0b57fc54fb4ffd126c6f6cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0004.png using Guid(3b93bd9a0b57fc54fb4ffd126c6f6cdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d487529da1a7aa882791ac2248164cf') in 0.0114069 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0058.png
+  artifactKey: Guid(9e475573ab6c78e49b44c181b9d1323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0058.png using Guid(9e475573ab6c78e49b44c181b9d1323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f89f2293d344276dac17ef3122b960b1') in 0.0197783 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0018.png
+  artifactKey: Guid(217e467b165fa384c81680f6c7e814c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0018.png using Guid(217e467b165fa384c81680f6c7e814c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '72e175ae30df92bf8184f7476680b15a') in 0.0113757 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0025.png
+  artifactKey: Guid(dff276546bcd8944ba8e8318f52511ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0025.png using Guid(dff276546bcd8944ba8e8318f52511ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e97fba165acf602c752543e679eff62c') in 0.011248 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0027.png
+  artifactKey: Guid(0ac73c666662adb48a10326bf841b2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0027.png using Guid(0ac73c666662adb48a10326bf841b2dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1b79fe7ab5dfd1bf87ac7fbc554ddb47') in 0.0124882 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0052.png
+  artifactKey: Guid(61c5c2cdb147edd4c9026c98f29446bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0052.png using Guid(61c5c2cdb147edd4c9026c98f29446bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '42f9cac1843d888532b43720b646401b') in 0.0107824 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0002.png
+  artifactKey: Guid(5f943254155a6a448ace081444266bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0002.png using Guid(5f943254155a6a448ace081444266bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '33646e96277617ae7782948c98a15749') in 0.0099459 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0020.png
+  artifactKey: Guid(c890445e41a5ad44a8ba49933090ad53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0020.png using Guid(c890445e41a5ad44a8ba49933090ad53) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76cbc9c2d0269bf24668c9bd6397f4d0') in 0.012705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0051.png
+  artifactKey: Guid(b26c937fe6f901c4fb9d829ba3c8ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0051.png using Guid(b26c937fe6f901c4fb9d829ba3c8ca20) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '15f985cb35e917ab88a44f2e14f1c4c9') in 0.0125807 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0046.png
+  artifactKey: Guid(2317e3b39e9b12e418fab47c2f2607b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0046.png using Guid(2317e3b39e9b12e418fab47c2f2607b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4ea6e3e4b809d7555de0535f43ba4eb6') in 0.0123234 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0041.png
+  artifactKey: Guid(0aee67c2ca65bfc4e86bb92ec4dd47d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0041.png using Guid(0aee67c2ca65bfc4e86bb92ec4dd47d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b745992943c4461160883d20a0075a2a') in 0.0117068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.043534 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0005.png
+  artifactKey: Guid(a7fa79fc081d9354f8d723e1b27af92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0005.png using Guid(a7fa79fc081d9354f8d723e1b27af92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f9e10551650abdd41cfe91994178c6d') in 0.0203772 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0059.png
+  artifactKey: Guid(6c115a3aaf276b44db99ef3ba039d468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0059.png using Guid(6c115a3aaf276b44db99ef3ba039d468) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ada3f6b55fbe274694488253649dec0d') in 0.0127463 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0050.png
+  artifactKey: Guid(77ddb3ddf8cd5e54a898f9aacb9774a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0050.png using Guid(77ddb3ddf8cd5e54a898f9aacb9774a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7a371acc2ff3c6d4b4d490b9961efa3') in 0.0211112 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0009.png
+  artifactKey: Guid(d30e95ae0aec9004da66d07f48745be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0009.png using Guid(d30e95ae0aec9004da66d07f48745be3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c07de3d264281f5a1af97e2c7a944e2') in 0.0450203 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0060.png
+  artifactKey: Guid(601f26e5bfda853479c009f376b0f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0060.png using Guid(601f26e5bfda853479c009f376b0f7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef0c36aa7e9b49625d9368b9dbe133e9') in 0.0355726 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0012.png
+  artifactKey: Guid(c9ccc157ade99964e86bc6ab8e136f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0012.png using Guid(c9ccc157ade99964e86bc6ab8e136f01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47766e4e94b6c4be11de58e58baa3d3c') in 0.0117329 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0021.png
+  artifactKey: Guid(59c4fb92fa93bec4c83b768cc7b3fa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0021.png using Guid(59c4fb92fa93bec4c83b768cc7b3fa92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0dd5fb24ada6be99d962eea2f674dff2') in 0.0125897 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0058.png
+  artifactKey: Guid(9e475573ab6c78e49b44c181b9d1323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0058.png using Guid(9e475573ab6c78e49b44c181b9d1323a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f8023c78b8d0308cd17e8ea407f9f261') in 0.0120737 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0024.png
+  artifactKey: Guid(fff6d3c9a0ae8e3409932c7b0406e861) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0024.png using Guid(fff6d3c9a0ae8e3409932c7b0406e861) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '890e81f09619b547a4398f2e90384321') in 0.0101733 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0044.png
+  artifactKey: Guid(36a63b68f5924c9489bcb0f3fcfe02b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Laser Shoot/Laser/Luana Skills LaserShoot0044.png using Guid(36a63b68f5924c9489bcb0f3fcfe02b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad707631a8e8469c60adbec6634b9baa') in 0.0108869 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server

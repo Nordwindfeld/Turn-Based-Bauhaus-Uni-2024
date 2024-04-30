@@ -15,7 +15,7 @@ D:/Unity Default/My project
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-53291
+59383
 -job-worker-count
 11
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/Unity Default/My project
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21036] Host "[IP] 172.29.32.1 [Port] 0 [Flags] 2 [Guid] 365986759 [EditorId] 365986759 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [21036] Host "[IP] 172.29.32.1 [Port] 0 [Flags] 2 [Guid] 365986759 [EditorId] 365986759 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [42948] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 2345914417 [EditorId] 2345914417 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [42948] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 2345914417 [EditorId] 2345914417 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 11
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 2.53 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.51 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.18f1 (1cb755715f58)
 [Subsystems] Discovering subsystems at path D:/Unity/2023.2.18f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2023.2.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -95,43 +95,43 @@ Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.005478 seconds.
-- Loaded All Assemblies, in  0.386 seconds
+Registered in 0.004274 seconds.
+- Loaded All Assemblies, in  0.341 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.292 seconds
-Domain Reload Profiling: 677ms
-	BeginReloadAssembly (152ms)
+- Finished resetting the current domain, in  0.266 seconds
+Domain Reload Profiling: 606ms
+	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (145ms)
-		LoadAssemblies (152ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (118ms)
+		LoadAssemblies (144ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (141ms)
-			TypeCache.Refresh (140ms)
-				TypeCache.ScanAssembly (127ms)
+		AnalyzeDomain (115ms)
+			TypeCache.Refresh (114ms)
+				TypeCache.ScanAssembly (104ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (292ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (266ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (238ms)
+		SetupLoadedEditorAssemblies (220ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
+			InitializePlatformSupportModulesInManaged (28ms)
 			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (151ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (139ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -154,103 +154,135 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.920 seconds
+- Loaded All Assemblies, in  0.868 seconds
 Refreshing native plugins compatible for Editor in 1.53 ms, found 4 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.70 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.79 ms, found 4 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.722 seconds
-Domain Reload Profiling: 1640ms
-	BeginReloadAssembly (379ms)
+- Finished resetting the current domain, in  0.685 seconds
+Domain Reload Profiling: 1551ms
+	BeginReloadAssembly (367ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (35ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (28ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (458ms)
-		LoadAssemblies (379ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (431ms)
+		LoadAssemblies (365ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (202ms)
-			TypeCache.Refresh (158ms)
-				TypeCache.ScanAssembly (144ms)
-			BuildScriptInfoCaches (33ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (133ms)
+			BuildScriptInfoCaches (30ms)
 			ResolveRequiredComponents (9ms)
-	FinalizeReload (723ms)
+	FinalizeReload (685ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (511ms)
+		SetupLoadedEditorAssemblies (471ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (388ms)
-			ProcessInitializeOnLoadMethodAttributes (41ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (355ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.70 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.95 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 186 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6261 unused Assets / (4.9 MB). Loaded Objects now: 6963.
+Unloading 6261 unused Assets / (5.0 MB). Loaded Objects now: 6963.
 Memory consumption went from 178.4 MB to 173.4 MB.
-Total: 12.398600 ms (FindLiveObjects: 1.161600 ms CreateObjectMapping: 0.644400 ms MarkObjects: 7.223400 ms  DeleteObjects: 3.368200 ms)
+Total: 12.342600 ms (FindLiveObjects: 1.236100 ms CreateObjectMapping: 0.475700 ms MarkObjects: 8.167900 ms  DeleteObjects: 2.462000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 31201.465854 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0012.png
-  artifactKey: Guid(7b941bb0120cab94595cf2f2734171ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0012.png using Guid(7b941bb0120cab94595cf2f2734171ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5245f502b7991217675b433b3a8b7c4') in 0.0703972 seconds
+  Time since last request: 46538.284408 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0000.png
+  artifactKey: Guid(6d00d89f475eb924681df55a9909fb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0000.png using Guid(6d00d89f475eb924681df55a9909fb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6975590b346d3a5c6ba565214d71f478') in 0.0679664 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0011.png
-  artifactKey: Guid(f8a76a5f28ce9954e8f1e6582a9f6a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0011.png using Guid(f8a76a5f28ce9954e8f1e6582a9f6a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '27eec4dc292ed087770a54444d025292') in 0.0101883 seconds
+  Time since last request: 0.000015 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0010.png
+  artifactKey: Guid(daed63d164398e84f887494630ea21b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0010.png using Guid(daed63d164398e84f887494630ea21b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '730f5889eab16c18bf87b51e038ca205') in 0.0118546 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0014.png
-  artifactKey: Guid(db8019759ccf79d41a22ae0ee591d4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0014.png using Guid(db8019759ccf79d41a22ae0ee591d4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2ce4e530a3765edd8e06e3d84fd00821') in 0.0118464 seconds
+  Time since last request: 0.000023 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0019.png
+  artifactKey: Guid(1f829b35442494d4dbecd1d9fb1a6147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0019.png using Guid(1f829b35442494d4dbecd1d9fb1a6147) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e9f5aedf7b4878689052a68fad3568e') in 0.0104751 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0008.png
-  artifactKey: Guid(fb4cb3e76daddde49aaf414d46422355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0008.png using Guid(fb4cb3e76daddde49aaf414d46422355) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c361e238f3d56fc45b45b3aaead1445') in 0.010136 seconds
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0012.png
+  artifactKey: Guid(a4b5933039d4a9e4a95ddc39b0698d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0012.png using Guid(a4b5933039d4a9e4a95ddc39b0698d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e18ec875be3d001f895c417488dcc2b9') in 0.0135852 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 56.561361 seconds.
-  path: Assets/Prefabs/Battle/Luana.prefab
-  artifactKey: Guid(c5c9c076d47761341ab255f36b7ace01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Battle/Luana.prefab using Guid(c5c9c076d47761341ab255f36b7ace01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '862363954d5fce870a11448a100dfd97') in 0.2795189 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 287
+  Time since last request: 53.282589 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging
+  artifactKey: Guid(dc91ccb6bc887014e893337d6bcd8438) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging using Guid(dc91ccb6bc887014e893337d6bcd8438) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '035a986db9dae4ff2bee8c52384a53ec') in 0.0004292 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.365755 seconds.
-  path: Assets/Assets/Characters/Luana/Luana Animation/Luana_0.controller
-  artifactKey: Guid(e2192dd558479514a9a2678d465e0d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Luana Animation/Luana_0.controller using Guid(e2192dd558479514a9a2678d465e0d42) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '86f9a1b04a7c8a58937bae219f94fc0e') in 0.0031889 seconds
-Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
-To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 17
+  Time since last request: 0.098498 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0000.png
+  artifactKey: Guid(b38c9ca79d1077e4996cf3f147332dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0000.png using Guid(b38c9ca79d1077e4996cf3f147332dc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c88bcb611283d305bae41c053a4c2d49') in 0.0195747 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0010.png
+  artifactKey: Guid(33fb266500a61664d8d2c4414bd28e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0010.png using Guid(33fb266500a61664d8d2c4414bd28e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b60631ec21c5c4cae9775bb8ecdcca4e') in 0.0175125 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.832864 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0007.png
+  artifactKey: Guid(917205f1822c24b41b49c51e53cfbec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0007.png using Guid(917205f1822c24b41b49c51e53cfbec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '81428d99fc98eed9d7f912ad44c12d4c') in 0.0125964 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0001.png
+  artifactKey: Guid(b092241016a5b6b4bac3ce23c6068495) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0001.png using Guid(b092241016a5b6b4bac3ce23c6068495) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef46f81abb5f73b8aba4bb9503eb8b1d') in 0.0121429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0008.png
+  artifactKey: Guid(7bc0acf8d8d8eab4dab15e8e4f27f00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0008.png using Guid(7bc0acf8d8d8eab4dab15e8e4f27f00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b657b7ec13047b5c2da8e5f66fe06e91') in 0.0111542 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

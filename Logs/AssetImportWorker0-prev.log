@@ -15,7 +15,7 @@ D:/Unity Default/My project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53291
+59383
 -job-worker-count
 11
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/Unity Default/My project
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4428] Host "[IP] 172.29.32.1 [Port] 0 [Flags] 2 [Guid] 60389453 [EditorId] 60389453 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [4428] Host "[IP] 172.29.32.1 [Port] 0 [Flags] 2 [Guid] 60389453 [EditorId] 60389453 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [37928] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 1332004429 [EditorId] 1332004429 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [37928] Host "[IP] 172.25.80.1 [Port] 0 [Flags] 2 [Guid] 1332004429 [EditorId] 1332004429 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-KHE80F6) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 11
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 2.26 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.50 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.18f1 (1cb755715f58)
 [Subsystems] Discovering subsystems at path D:/Unity/2023.2.18f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/2023.2.18f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/2023.2.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56944
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -95,43 +95,43 @@ Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Unity/2023.2.18f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.006521 seconds.
-- Loaded All Assemblies, in  0.365 seconds
+Registered in 0.004449 seconds.
+- Loaded All Assemblies, in  0.344 seconds
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.280 seconds
-Domain Reload Profiling: 644ms
-	BeginReloadAssembly (137ms)
+- Finished resetting the current domain, in  0.270 seconds
+Domain Reload Profiling: 613ms
+	BeginReloadAssembly (132ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (46ms)
-	LoadAllAssembliesAndSetupDomain (141ms)
-		LoadAssemblies (138ms)
+	RebuildCommonClasses (37ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (132ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (137ms)
-			TypeCache.Refresh (135ms)
-				TypeCache.ScanAssembly (124ms)
+		AnalyzeDomain (121ms)
+			TypeCache.Refresh (121ms)
+				TypeCache.ScanAssembly (110ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (281ms)
+	FinalizeReload (270ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (231ms)
+		SetupLoadedEditorAssemblies (223ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
+			InitializePlatformSupportModulesInManaged (29ms)
 			SetLoadedEditorAssemblies (3ms)
 			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (140ms)
-			ProcessInitializeOnLoadMethodAttributes (50ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -154,196 +154,314 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Unity Default\My project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.917 seconds
-Refreshing native plugins compatible for Editor in 1.52 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.825 seconds
+Refreshing native plugins compatible for Editor in 1.56 ms, found 4 plugins.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.68 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.82 ms, found 4 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.738 seconds
-Domain Reload Profiling: 1653ms
-	BeginReloadAssembly (382ms)
+- Finished resetting the current domain, in  0.742 seconds
+Domain Reload Profiling: 1566ms
+	BeginReloadAssembly (349ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (31ms)
-	RebuildCommonClasses (31ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (29ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (457ms)
-		LoadAssemblies (372ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (406ms)
+		LoadAssemblies (328ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (210ms)
-			TypeCache.Refresh (165ms)
-				TypeCache.ScanAssembly (150ms)
-			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (739ms)
+		AnalyzeDomain (184ms)
+			TypeCache.Refresh (144ms)
+				TypeCache.ScanAssembly (131ms)
+			BuildScriptInfoCaches (29ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (743ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (514ms)
+		SetupLoadedEditorAssemblies (527ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (62ms)
-			ProcessInitializeOnLoadAttributes (390ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (418ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.55 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 186 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6261 unused Assets / (5.6 MB). Loaded Objects now: 6963.
-Memory consumption went from 178.4 MB to 172.7 MB.
-Total: 8.466600 ms (FindLiveObjects: 0.659500 ms CreateObjectMapping: 0.341200 ms MarkObjects: 4.599100 ms  DeleteObjects: 2.866200 ms)
+Unloading 6261 unused Assets / (4.8 MB). Loaded Objects now: 6963.
+Memory consumption went from 178.4 MB to 173.5 MB.
+Total: 9.046500 ms (FindLiveObjects: 0.643300 ms CreateObjectMapping: 0.727700 ms MarkObjects: 5.259900 ms  DeleteObjects: 2.414900 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 31190.902713 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0010.png
-  artifactKey: Guid(fe4d7532b646a1d4b9f414e2d4f8e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0010.png using Guid(fe4d7532b646a1d4b9f414e2d4f8e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdb63974968dc96ba338da10aef1d8b7') in 0.0735284 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 46440.748903 seconds.
+  path: Assets/Prefabs/Battle/Luana.prefab
+  artifactKey: Guid(c5c9c076d47761341ab255f36b7ace01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battle/Luana.prefab using Guid(c5c9c076d47761341ab255f36b7ace01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '904d20e4939d4f0dab42674a1966a5e5') in 0.6830109 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 287
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0018.png
-  artifactKey: Guid(ee64c57fb57108f4f8540c28917918e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0018.png using Guid(ee64c57fb57108f4f8540c28917918e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50d43f77a840f5c0649dcb5cb6c8d85b') in 0.0111802 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 49.189836 seconds.
+  path: Assets/Prefabs/Battle/Luana.prefab
+  artifactKey: Guid(c5c9c076d47761341ab255f36b7ace01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battle/Luana.prefab using Guid(c5c9c076d47761341ab255f36b7ace01) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '490fe876df9ca326479198d7a8ab91bd') in 0.0435428 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 278
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0000.png
-  artifactKey: Guid(9d045fce583d1814ab9e4ef38aa565ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0000.png using Guid(9d045fce583d1814ab9e4ef38aa565ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fe388985664bfc61e718f403c66a2881') in 0.0111357 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move
-  artifactKey: Guid(8344d6892fd9f85428b3f669d1bf8105) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move using Guid(8344d6892fd9f85428b3f669d1bf8105) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b9e3a5bd82bf59abf7ed358606b8344') in 0.0003244 seconds
+  Time since last request: 15.000433 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Right
+  artifactKey: Guid(44842fb6c6915d44ea24797fcb855aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Right using Guid(44842fb6c6915d44ea24797fcb855aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '301dbae1d812bc597a74adc7a25ff6d8') in 0.0005958 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0002.png
-  artifactKey: Guid(b6de569705ba0ca46af89492808e3385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0002.png using Guid(b6de569705ba0ca46af89492808e3385) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3790ae28b0206f67654bab7f256113e7') in 0.0143324 seconds
+  Time since last request: 3.661783 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0000.png
+  artifactKey: Guid(6d00d89f475eb924681df55a9909fb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0000.png using Guid(6d00d89f475eb924681df55a9909fb9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'efded442d2c8392a0d27e9c98cbd0921') in 0.0292821 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0011.png
-  artifactKey: Guid(f8a76a5f28ce9954e8f1e6582a9f6a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0011.png using Guid(f8a76a5f28ce9954e8f1e6582a9f6a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd5dec6f65920fb73d636d50897f796cd') in 0.011569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0023.png
-  artifactKey: Guid(b27dd0cd8c3f8704eac5ec459f33848f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0023.png using Guid(b27dd0cd8c3f8704eac5ec459f33848f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '820e85e2ba9ac1281539cb219d5cde0e') in 0.0138899 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0007.png
-  artifactKey: Guid(9516a17e18e692842b52c705297b54fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0007.png using Guid(9516a17e18e692842b52c705297b54fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dd95f07a8dbd3b4425286005dfbc187') in 0.0124522 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0022.png
-  artifactKey: Guid(e2be16f348c281149badc7a6b62cf4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0022.png using Guid(e2be16f348c281149badc7a6b62cf4cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8f18ef800d92cb0003038253f9cd917e') in 0.0133276 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0021.png
-  artifactKey: Guid(f7162c1a7ed706646a5cff78db79d8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0021.png using Guid(f7162c1a7ed706646a5cff78db79d8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e503fa8558b5103c8423d097a5876fc7') in 0.0130494 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0008.png
-  artifactKey: Guid(fb4cb3e76daddde49aaf414d46422355) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0008.png using Guid(fb4cb3e76daddde49aaf414d46422355) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46c411c39ab474546b6108fe0ac9de12') in 0.0119111 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0001.png
-  artifactKey: Guid(c7fc789a815c87c409886fbf34181527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0001.png using Guid(c7fc789a815c87c409886fbf34181527) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9567c716f3a9aa0822ab1286d8a5c58b') in 0.0122058 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.309632 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0001.png
-  artifactKey: Guid(c7fc789a815c87c409886fbf34181527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0001.png using Guid(c7fc789a815c87c409886fbf34181527) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '47cea4a713d2d46b9f6368073468adec') in 0.0120486 seconds
+  Time since last request: 0.000027 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0014.png
+  artifactKey: Guid(9cbf5b2fa16c2214eb822a871b1cc362) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0014.png using Guid(9cbf5b2fa16c2214eb822a871b1cc362) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '99c112db38698f8706a88af64a427dcf') in 0.0138369 seconds
+Internal: JobTempAlloc has allocations that are more than the maximum lifespan of 4 frames old - this is not allowed and likely a leak
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000024 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0010.png
-  artifactKey: Guid(fe4d7532b646a1d4b9f414e2d4f8e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0010.png using Guid(fe4d7532b646a1d4b9f414e2d4f8e63d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f785d9648c95ac9e5e7e08c5f0e2911b') in 0.0100596 seconds
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0017.png
+  artifactKey: Guid(ac30c64b8a720274b809384e77c3173d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0017.png using Guid(ac30c64b8a720274b809384e77c3173d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23c25a76578824e978dbaecbc4152359') in 0.0131521 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0018.png
-  artifactKey: Guid(ee64c57fb57108f4f8540c28917918e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0018.png using Guid(ee64c57fb57108f4f8540c28917918e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd92885ea93aabd083256722231b26683') in 0.0106629 seconds
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0007.png
+  artifactKey: Guid(7b85d75cf1a00584f89d1562734bd78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0007.png using Guid(7b85d75cf1a00584f89d1562734bd78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a686a92f537dec9ded3e70c68106fe5') in 0.013464 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0013.png
-  artifactKey: Guid(e4ba22f1d6758244fa93ca8367cf7ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0013.png using Guid(e4ba22f1d6758244fa93ca8367cf7ef3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5bc4fbf2395b11fb734cf578cbb64bd5') in 0.0124648 seconds
+  Time since last request: 0.000058 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0013.png
+  artifactKey: Guid(bbb194cf0d5211c46832e20395042479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0013.png using Guid(bbb194cf0d5211c46832e20395042479) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a172f32b8245fe9dd3b064e19e0e0fc') in 0.0156645 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0010.png
+  artifactKey: Guid(daed63d164398e84f887494630ea21b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0010.png using Guid(daed63d164398e84f887494630ea21b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dffa31d809db75d39afe093cfaf81af0') in 0.0124853 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000019 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0023.png
-  artifactKey: Guid(b27dd0cd8c3f8704eac5ec459f33848f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0023.png using Guid(b27dd0cd8c3f8704eac5ec459f33848f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '79026a859f79a2e93ec9c6f2284d0c8a') in 0.0119904 seconds
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0018.png
+  artifactKey: Guid(f4532081ec7d9654cb767ae5aacda735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0018.png using Guid(f4532081ec7d9654cb767ae5aacda735) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '492138433dc0146326c0b2bda8fd342e') in 0.0128548 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0021.png
-  artifactKey: Guid(f7162c1a7ed706646a5cff78db79d8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheLeft0021.png using Guid(f7162c1a7ed706646a5cff78db79d8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4dc9ba250153a521ef8a614b1e42b688') in 0.0117175 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0004.png
+  artifactKey: Guid(7ba77808a1e290e428fac579e9009e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0004.png using Guid(7ba77808a1e290e428fac579e9009e2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd74005565d09dc1d8afc1e3bd41d19be') in 0.012698 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0002.png
+  artifactKey: Guid(d249da81303e02646987a02eacfb2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0002.png using Guid(d249da81303e02646987a02eacfb2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd855076a36a849c92e261758110834de') in 0.0133432 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0016.png
+  artifactKey: Guid(1b1b8b9d83f0c804f80960a46daac76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0016.png using Guid(1b1b8b9d83f0c804f80960a46daac76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'aefbbc902e55a84cd8f441bfee909b9d') in 0.0138616 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0020.png
+  artifactKey: Guid(de6504a88d799a147a02474e840cf236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0020.png using Guid(de6504a88d799a147a02474e840cf236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'eb020683126160a2fd414277736312a4') in 0.0151527 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0003.png
+  artifactKey: Guid(fcb0a14c98d5b4540adef8edcf9fa4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0003.png using Guid(fcb0a14c98d5b4540adef8edcf9fa4db) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '66a60aca4701dc2f6a26fa69403135bd') in 0.0132816 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0023.png
+  artifactKey: Guid(a898c2aa779a09d4e8dfeac743b3bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0023.png using Guid(a898c2aa779a09d4e8dfeac743b3bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fc52c44f7476095b646ae0270e584779') in 0.011832 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.678519 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0002.png
+  artifactKey: Guid(d249da81303e02646987a02eacfb2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0002.png using Guid(d249da81303e02646987a02eacfb2799) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '38beced55d26272b8b58851b68b843d8') in 0.0133408 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0017.png
+  artifactKey: Guid(ac30c64b8a720274b809384e77c3173d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0017.png using Guid(ac30c64b8a720274b809384e77c3173d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7c8f7e53847338b99425f21cd17e847b') in 0.0139401 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0013.png
+  artifactKey: Guid(bbb194cf0d5211c46832e20395042479) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0013.png using Guid(bbb194cf0d5211c46832e20395042479) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1bde279150b4ba15d33f4abf5ef1da55') in 0.0179114 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0006.png
+  artifactKey: Guid(1cd15c01821a383468a5488979156f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0006.png using Guid(1cd15c01821a383468a5488979156f4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '697fa68ef80098ab290ae43441ad62e3') in 0.011527 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0016.png
+  artifactKey: Guid(1b1b8b9d83f0c804f80960a46daac76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0016.png using Guid(1b1b8b9d83f0c804f80960a46daac76c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e2f34074289bef44a5467a3680e8f92') in 0.0155042 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0023.png
+  artifactKey: Guid(a898c2aa779a09d4e8dfeac743b3bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Move/Left/MoveToTheRight0023.png using Guid(a898c2aa779a09d4e8dfeac743b3bbf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc21442bda9e072cdb17c8fa4625e34e') in 0.0120638 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 53.376182 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0002.png
+  artifactKey: Guid(eac613fb15891d54d9fe6e3026e9356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0002.png using Guid(eac613fb15891d54d9fe6e3026e9356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '028161fda736b86a4f79b9831cd6af0a') in 0.0192784 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0007.png
+  artifactKey: Guid(917205f1822c24b41b49c51e53cfbec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0007.png using Guid(917205f1822c24b41b49c51e53cfbec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0c0b4a0110332ce720d1cedced24ae9a') in 0.0160387 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.852581 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0002.png
+  artifactKey: Guid(eac613fb15891d54d9fe6e3026e9356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0002.png using Guid(eac613fb15891d54d9fe6e3026e9356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5a45ae97b6a247946ac7aa6b838e83cb') in 0.012758 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0010.png
+  artifactKey: Guid(33fb266500a61664d8d2c4414bd28e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Luana/Battle/Skill/Sword Charging/Luana Sword Skill0010.png using Guid(33fb266500a61664d8d2c4414bd28e22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '651765f4ae077bb722ac1beae7bb11b6') in 0.0128133 seconds
+Internal: There are remaining Allocations on the JobTempAlloc. This is a leak, and will impact performance
+To Debug, run app with -diag-job-temp-memory-leak-validation cmd line argument. This will output the callstacks of the leaked allocations.
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

@@ -1,0 +1,539 @@
+fileFormatVersion: 2
+guid: 42f56f4238832b5468c64d99aa5412dc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1448773455063603498
+    second: Luana Skills LaserShoot0056_0
+  - first:
+      213: 2079183188374022742
+    second: Luana Skills LaserShoot0056_1
+  - first:
+      213: -1059217381885669822
+    second: Luana Skills LaserShoot0056_2
+  - first:
+      213: 83763469721391748
+    second: Luana Skills LaserShoot0056_3
+  - first:
+      213: 6352934037590826270
+    second: Luana Skills LaserShoot0056_4
+  - first:
+      213: -6379205272633293820
+    second: Luana Skills LaserShoot0056_5
+  - first:
+      213: 2260504630597057265
+    second: Luana Skills LaserShoot0056_6
+  - first:
+      213: -2523712797412755676
+    second: Luana Skills LaserShoot0056_7
+  - first:
+      213: -3061009191965678525
+    second: Luana Skills LaserShoot0056_8
+  - first:
+      213: 8963663366312399940
+    second: Luana Skills LaserShoot0056_9
+  - first:
+      213: -4564106765464021413
+    second: Luana Skills LaserShoot0056_10
+  - first:
+      213: 8401978403950213216
+    second: Luana Skills LaserShoot0056_11
+  - first:
+      213: 3605247668186220159
+    second: Luana Skills LaserShoot0056_12
+  - first:
+      213: 8452658843565443703
+    second: Luana Skills LaserShoot0056_13
+  - first:
+      213: -6538437715978416728
+    second: Luana Skills LaserShoot0056_14
+  - first:
+      213: 2973748949737242054
+    second: Luana Skills LaserShoot0056_15
+  - first:
+      213: -2108001547382386712
+    second: Luana Skills LaserShoot0056_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 375
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29d41d08c31b1410800000000000000
+      internalID: 1448773455063603498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 77
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a6ff5081ebadc10800000000000000
+      internalID: 2079183188374022742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 77
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e09c43767ec41f0800000000000000
+      internalID: -1059217381885669822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 77
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482d5e19e66992100800000000000000
+      internalID: 83763469721391748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_4
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 77
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dd61019d72a2850800000000000000
+      internalID: 6352934037590826270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_5
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 77
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 404c46f5a928877a0800000000000000
+      internalID: -6379205272633293820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_6
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 77
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fafcdf1cfcee5f10800000000000000
+      internalID: 2260504630597057265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_7
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 82
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 427fa1bf498f9fcd0800000000000000
+      internalID: -2523712797412755676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 77
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3442eaa9b5c1585d0800000000000000
+      internalID: -3061009191965678525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_9
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4449b331754556c70800000000000000
+      internalID: 8963663366312399940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_10
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 78
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b565f87141909a0c0800000000000000
+      internalID: -4564106765464021413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_11
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 81
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068b4f1c7d2d99470800000000000000
+      internalID: 8401978403950213216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_12
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 83
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f768b8d17a9680230800000000000000
+      internalID: 3605247668186220159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_13
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 79
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a48422f60ed4570800000000000000
+      internalID: 8452658843565443703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_14
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 79
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ad07191a8dc245a0800000000000000
+      internalID: -6538437715978416728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_15
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 77
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd77480ae0e44920800000000000000
+      internalID: 2973748949737242054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Luana Skills LaserShoot0056_16
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 77
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef8c46e2cfdeb2e0800000000000000
+      internalID: -2108001547382386712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Luana Skills LaserShoot0056_0: 1448773455063603498
+      Luana Skills LaserShoot0056_1: 2079183188374022742
+      Luana Skills LaserShoot0056_10: -4564106765464021413
+      Luana Skills LaserShoot0056_11: 8401978403950213216
+      Luana Skills LaserShoot0056_12: 3605247668186220159
+      Luana Skills LaserShoot0056_13: 8452658843565443703
+      Luana Skills LaserShoot0056_14: -6538437715978416728
+      Luana Skills LaserShoot0056_15: 2973748949737242054
+      Luana Skills LaserShoot0056_16: -2108001547382386712
+      Luana Skills LaserShoot0056_2: -1059217381885669822
+      Luana Skills LaserShoot0056_3: 83763469721391748
+      Luana Skills LaserShoot0056_4: 6352934037590826270
+      Luana Skills LaserShoot0056_5: -6379205272633293820
+      Luana Skills LaserShoot0056_6: 2260504630597057265
+      Luana Skills LaserShoot0056_7: -2523712797412755676
+      Luana Skills LaserShoot0056_8: -3061009191965678525
+      Luana Skills LaserShoot0056_9: 8963663366312399940
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
